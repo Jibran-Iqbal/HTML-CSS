@@ -1,0 +1,93 @@
+/* 
+transition:change over time
+transition-property:
+transition-duration:
+*/
+
+div{
+    width:200px;
+    height:200px;
+    display:inline-block;
+}
+.one{
+    background:red;
+}
+.two{
+    background:blue;
+}
+.three{
+    background:green;
+    transition-property:background,border-radius,transform;
+    transition-duration:2s,0.5s,3s;
+    /* Now the color changes over a period of 2s */
+}
+.three:hover{
+    border-radius: 50%;
+    transform:skew(50deg,40deg);
+    background-color: coral;
+}
+/* 
+transition:change over time
+transition-delay:
+shrthand
+*/
+.four{
+    background:red;
+    transition-property:background,border-radius,transform;
+    transition-duration:2s,0.5s,3s;
+    /* Now the color changes over a period of 2s */
+    transition-delay:2s;
+    /* Now the changes will take place after 2s */
+
+}
+.four:hover{
+    border-radius: 50%;
+    /* transform:skew(50deg,40deg); */
+    background-color: coral;
+}
+.five:hover{
+    border-radius: 50%;
+    /* transform:skew(50deg,40deg); */
+    background-color: coral;
+}
+.six:hover{
+    border-radius: 50%;
+    /* transform:skew(50deg,40deg); */
+    background-color: coral;
+}
+.five{
+    background:blue;
+    transition:background 3s 2s,border-radius 3s;
+    /* The syntax is
+    property duration delay */
+    /* This is a shorthand */
+}
+.six{
+    background:green;
+    transition:all 3s 1s;
+    /* This is a even better shorthand */
+}
+.seven{
+    background:red;
+}
+.eight{
+    background:blue;
+}
+.nine{
+    background:green;
+}
+.ten{
+    background:yellow;
+}
+.eleven{
+    background:red;
+}
+.twelve{
+    background:blue;
+}
+.thirteen{
+    background:green;
+}
+.fourteen{
+    background:yellow;
+}

@@ -1,0 +1,70 @@
+/* visit w3schools.com for doubts*/
+/* press ctrl+space to get emmet suggestions */
+h1{
+    color: crimson;
+    font-size: 4rem;
+    /* There are more selectors like "body"  */
+}
+h2{
+    font-size: 2.5rem;
+    color:blue
+}
+p,h2{
+    color: blue;
+    font-size: 150%;
+}
+
+#ab{
+    color: red;
+    /* This called an id selector */
+    background: black;
+}
+
+
+span{
+    color: red;
+    /* span is used for the text of a paragraph as div starts off from a new line */
+    text-transform: uppercase;
+}
+
+.two{
+    /* specificity in css
+    Although the last command is for grey backgound css lets class "two" have orange background 
+    for more info google specificity measurement css*/
+    background: darkorange;
+}
+
+div,.one{
+    color:blue;
+    border: 3px solid yellow;
+    /* Another div can be added it will have the same effect on the other selected element */
+    background:darkgray;
+}
+body{
+    font-family: cursive;
+    background-color: blue;
+    
+}
+*{
+    color:tomato ;
+    /* This is the universal selector with the least specificity */
+}
+
+
+/* The default browser styles can be seen in the chrome dev tools/elements and then press the selector */
+/* styles can be changed in the browser too but after reloading changes will be gone*/
+
+
+
+/* The h1 is the selector */
+/* The whole thing is the css rule */
+/* Within the braces is the declaration box */
+/* Within the declaration box is the declaration */
+/* That color thing is the property */
+/* For the property we have the value */
+/* Extremely precise word is element selectors */
+/* RGB red green blue 0-255
+red=color: rgb(255,0,0)
+green=0,255,0
+black=0,0,0
+white=255,255,255 */

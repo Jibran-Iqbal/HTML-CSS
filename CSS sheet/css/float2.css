@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+div{
+    float:left;
+    width:25%;
+    /* We are using 25% because 100/4(Number of divs we have) is 25 */
+    height:100px;
+}
+a{
+    color:black;
+    text-decoration: none;
+    font-size: 2rem;
+    display:inline-block;
+    height:100px;
+    width:25vw;
+    background:red;
+}
+.one{
+    background:blue;
+}
+.two{
+    background:green;
+}
+.three{
+    background:yellow;
+}
+h1{
+    clear:both;
+    /* This pushes the heading1 to next line */
+}

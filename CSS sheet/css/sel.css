@@ -1,0 +1,16 @@
+.bl{
+    color: red;
+    background: black;
+}
+
+.red{
+    color: black;
+    background:red
+}
+#bbb{
+    text-transform: capitalize;
+}
+.rrr{
+    text-transform: uppercase;
+}
+/* id should be used for something unique */

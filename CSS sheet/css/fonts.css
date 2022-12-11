@@ -1,0 +1,82 @@
+/* 
+Font-size
+Font-family
+*/
+body{
+    font-family: Helvetica;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 
+font-stack generic-family
+serif, sans-serif, cursive, fantasy, monospace 
+*/
+/* 
+emmet recommends many fonts since if one is not working then the other one and if that other is also not supported by the browser it gives generic one like monospace and also gives some font which closely resembles the given font
+*/
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* The generic ones are suggested in the bottom of the suggestions */
+}
+/* 
+Google fonts
+*/
+/* go to fonts.google.com
+for different fonts */
+
+body{
+    font-family: 'Open Sans', sans-serif;   
+}
+.main{
+    font-family: 'Roboto', sans-serif;
+}
+/* 
+font-weight
+font-style  
+*/
+.three{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+/* 
+there is a limit to the boldness mentioned in the link
+*/
+.four{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.five{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* font-style: normal;
+    This basically returns the normal font style */
+    font-style: oblique;
+}
+/* 
+text-align
+text-indent
+*/
+.six{
+    text-align: center;
+}
+.seven{
+    text-align: right;
+    /* The default text align is left */
+}
+.h6,.h7{
+    text-align: center;
+}
+.eight{
+    text-indent: 160px;
+}
+.nine{
+    text-indent: 10rem;
+}
+/* 
+line-height
+letter-spacing
+word-spacing
+text-transform
+text-decoration
+*/

@@ -1,0 +1,22 @@
+div{
+    margin:10px;
+    background-color: blue;
+    color:white;
+}
+.none{
+    display: none;
+}
+
+.opacity-1{
+    opacity: 1;
+}
+.opacity-5{
+    opacity: 0.5;
+}
+.opacity-0{
+    opacity: 0; 
+}
+.visibility{
+    visibility: hidden;
+}
+/* the opacity and the visibility are helping us hide the element whereas the display:none; option is taking the element out of the flow */

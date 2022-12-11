@@ -1,0 +1,52 @@
+/* 
+text-shadow
+box-shadow
+/*
+There is also the option of using any shadow generator onine
+*/
+
+h1{
+    text-shadow:1px 1px 3px red;
+    /* 
+    The first value is for x-direction 
+    The second is for y-direction
+    The third is for blur
+     */
+}
+.box{
+    width:200px;
+    height:200px;
+    background:blue;
+    margin:20px;
+    box-shadow: 3px 5px 5px green;
+        /* 
+    The first value is for x-direction 
+    The second is for y-direction
+    The third is for blur
+     */
+}
+h2{
+    /* The below code is copied and pasted from a random shadow generator website */
+    text-shadow: 5px 5px 0px rgba(255, 0, 0, 0.63);
+}
+.box2{
+    width:500px;
+    height:500px;   
+    background:yellow;
+    margin:20px;
+    /* The below code is copied and pasted from a random shadow generator website */
+    box-shadow: 102px -44px 21px 33px rgba(255,0,0,0.52);
+    transition:box-shadow 0.5s linear;
+}
+.box2:hover{
+    /* The below code is copied and pasted from a random shadow generator website */
+    box-shadow: -30px 2px 14px 3px rgba(48,12,248,0.75);
+-webkit-box-shadow: -30px 2px 14px 3px rgba(48,12,248,0.75);
+-moz-box-shadow: -30px 2px 14px 3px rgba(48,12,248,0.75);
+}
+.box2::after{
+    content:"Browser Prefixes:-Wonder prefixes as they are also called are the ways for different browsers to add support for the latest css features.The above copied code is so big because of the browser prefixes  present in it we can go to caniuse.com to checkout the browser prefixes for our elements moreover we don't always have to type out those whole browser prefixes as we may setup some kind of automation wherein it scans through our document and adds them automatically at very end. We may use something like gulp or another npm module and they will do the work where we can setup everything as to how we would like to add browser prefixes like for whats veersions and all that and it is much more faster. We can also use autoprefixer from github. We can copy and paste our code there but again it is a quick and dirty way, There are better ways where it scans through your file and automatically adds them.";
+    color:red;
+    font-size:20px;
+    font-weight: 800;
+}

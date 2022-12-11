@@ -1,0 +1,21 @@
+/* 
+    :link
+    :visited
+    :hover
+    :active
+*/
+a:link{
+    color:aqua;
+    /* This one is used to select all the links that are directing outside */
+}
+a:visited{
+    color:blue;
+    /* This changes the color of all the visited links to blue */
+}
+a:hover{
+    color:green;
+    /* This changes the color of the link when we hover over it */
+}
+a:active{
+    color:yellow;
+}

@@ -1,0 +1,72 @@
+.one{
+    color:cadetblue;
+    background: rgba(0,0,189,0.75);
+}
+.two{
+    color:#FF0000;
+    background:#00FFFF;
+}
+/* Hex color values 
+1 2 3 4 5 6 7 8 9 | A|  B | C|  D|  E|  F|
+1 2 3 4 5 6 7 8 9 |10| 11 |12| 13| 14| 15| 
+#ff0000=red
+#00ff00=green
+#0000ff=blue
+#000 also is equal to black
+#fff also is equal to white
+#222 is equal to #222222*/
+.one{
+    font-size:60px;
+    width:230px;
+    height: 135px;
+    /* these px pixels are called absolute values */
+    /* 
+    width:fit-content;
+    fits the background with accord to the
+    content 
+    */
+}
+.outer{
+    width:200px;
+    height:200px;
+    background: red;
+}
+.inner{
+    width:50%;
+    height:50%;
+    background: royalblue;
+}
+/* 
+em- Relative depends on parent
+1em = 16px(if body is the parent element) default browser style should be
+
+default browser font style can be changed by going to the settings
+
+1em = base value
+*/
+div{
+    font-size: 10px;
+}
+.relative{
+    font-size: 2em;
+}
+.absolute{
+    font-size:80px
+}
+/* 
+rem = relative depends on root
+1rem = 16 px default browser style should be
+*/
+html{
+    font-size:32 px;
+}
+.pare{
+    font-size: 40px;
+}
+/* In this case however the root is html */
+.relativ{
+    font-size: 4rem;
+}
+.absolut{
+    font-size: 64px;
+}

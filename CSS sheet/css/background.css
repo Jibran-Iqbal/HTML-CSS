@@ -1,0 +1,70 @@
+div{
+    height:300px;
+    color:red;
+}
+.big{
+    background:url("./big.jpeg");
+}
+.small{
+    background:url(./small.jpeg)
+}
+.folder{
+    background:url(./images/img.jpeg)
+}
+/* Now as we can see we have a background image repeating problem and we solve it in the next three images*/
+/* Last Rule Order */
+.one{
+    background-repeat: round;
+    /* This option repeats but gives repetition of equal dimensions */
+}
+.two{
+    background-repeat: repeat;
+    /* This is set by default and just repeats the image to fill the background */
+}
+.four{
+    background-repeat: no-repeat;
+}
+.five{
+    background-repeat: repeat-x;
+}
+.six{
+    background-repeat: repeat-y;
+}
+.seven{
+    background-repeat:space;
+}
+/* background-size */
+.two{
+    background-size:cover;
+    /* Here a better image should be selected or the quality will suffer */
+}
+.three{
+    background-size:contain;
+    /* This keeps the ratio of the image and repeats accordingly */
+}
+/* background-positions */
+.eight{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nine{
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.ten{
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.eleven{
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.twelve{
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.thirteen{
+    background-repeat: no-repeat;
+    /* background-position using percentages the first is for x-axis and the second is for y-axis */
+    background-position: 45% 45%;
+}

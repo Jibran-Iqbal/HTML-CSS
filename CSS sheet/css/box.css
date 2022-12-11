@@ -1,0 +1,71 @@
+/* 
+CSS BOX MODEL
+PADDING
+MARGIN
+BORDER
+*/
+/* 
+Margin is the distance between two element and padding maybe thought of as size of an element
+*/
+/* 
+BORDER-RADIUS
+NEGATIVE MARGIN
+*/
+h1{
+    background: red;
+    padding-top:20px;
+    padding-left:30px;
+    padding-right:100px;
+    padding-bottom:60px;
+    margin-right: 50px;
+    margin-bottom: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: chartreuse;
+}
+p{
+    background: blue;
+    /* padding:30px 60px */
+    /* In the above one the first value is top and bottom and the second one is left and right */
+}
+    .one{    
+    padding: 30px 40px 50px 60px;
+    /* The order of the above one is top right bottom left */
+    margin-top: 0px;
+    margin-left: 50px;
+    border:coral 13px solid;
+}
+/* short-cut of getting rid of all the margins is by using universal selector */
+/*
+      *{
+        margin:0;
+        }
+ */
+.two{
+    margin:30px;
+    border-bottom-color: #111;
+    border-bottom-width: 5px;
+    border-bottom-style: dashed;
+}
+
+.three{
+    margin:10px 30px;
+    padding:40px 20px;
+    border:firebrick 5px solid;
+    border-radius: 20px;
+
+}
+
+.four{
+    margin:30px 40px 50px 60px;
+    border:green solid 6px;
+    border-radius: 50%;
+    padding:40px;
+}
+
+.five{
+    border:rgb(128, 0, 0) solid 6px;
+    border-radius: 50%;
+    padding:40px;
+    margin-top: -160px;
+}

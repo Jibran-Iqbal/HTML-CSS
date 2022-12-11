@@ -1,0 +1,62 @@
+div{
+    border: red solid 5px;
+    margin:5px;
+}
+
+.im1{
+    float:left;
+}
+.im2{
+    float:left;
+}
+
+.pa2{
+    clear:left;
+}
+/* Clear nullifies the effect of float */
+
+.im3{
+    float:right;
+    /* here just to make it look better we can add
+    margin:5px; */
+}
+
+.im4{
+    float:left;
+}
+.im5{
+    float:right;
+}
+/* When both are floating like this then if we clear only right or left then only that particular side will be cleared */
+.im6{
+    float:left;
+    height:100px;
+}
+.im7{
+    float:right;
+}
+.pa5{
+    /* color:saddlebrown; */
+    clear:right;
+}
+/* As we can see the right one is ignored */
+.im8{
+    float:left;
+    height:100px;
+}
+.im9{
+    float:right;
+}
+.pa6{
+    clear:both;
+    /* As we can see both are ignored */
+}
+/* 
+overflow:-prevents the overflow of the image and keeps it only within the boundaries
+*/
+div{
+    overflow:hidden
+}
+.imm{
+    height:1000px;
+}

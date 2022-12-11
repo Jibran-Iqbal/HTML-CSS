@@ -1,0 +1,51 @@
+/* 
+position relative
+*/
+div{
+    border:red 3px solid;
+    margin-top:40px;
+    background:yellow;
+    position:relative;
+    /* There is also 
+    position:static;
+    Which is set by default */
+}
+.one{
+    background:blue;
+}
+.two{
+    background:green;
+    position:relative;
+}
+.special{
+    position: relative;
+    top:50px;
+    /* got shifted 50px i.e downside relative to its original position */
+    left: 10rem;
+    right:50%;
+    bottom:25px;
+    background:coral;
+    font-size: 20px;
+}
+
+/* position absolute */
+.spe{
+    background:crimson;
+    font-size:20px;
+    position:absolute;
+    top:0;
+    right:0;
+    /* Position absolute makes the position of an element relative to the parent element which has position relative if no parent element has relative position then the position absolute becomes relative to highest parent i.e the body */
+}
+/* 
+position fixed
+*/
+button{
+    background:red;
+    font-size:40px;
+    color:white;
+    position:fixed;
+    /* Position fixed makes the element relative to the document(live) however without setting top or right or left or bottom or all of these values we cannot see it in our document */
+    top:0;
+    right:0;
+}

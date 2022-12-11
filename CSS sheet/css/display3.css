@@ -1,0 +1,42 @@
+/* 
+inline-block
+*/
+a{
+    font-size: 60px;
+    background: red;
+    margin:10px;
+    /* Now here the catch is that whenever we are adding the margin the browser ain't respecting that and only adding the margin on the left and right and not on the top and bottom */
+}
+.one{
+    font-size: 60px;
+    background: red;
+    margin:10px;
+    /* This where inline-block kicks in now we can always just use simple "block" but the problem with that would be that it would give every element a new line and that may not look so good for links  */
+    display:inline-block;
+    /* And there we go now we have top and bottom margin for an inline element */
+}
+/* 
+Box-Sizing
+*/
+.box1,.box2,.box3{
+    width:200px;
+    height:200px;
+    color:white;
+}
+
+.box1{
+    background:red;
+    padding:20px;
+    /* Now here's the thing if we are suppose positioning this element somewhere we give it some height and width but now since we have added padding too the height and width now is 240x240 instead of 200x200 which is what we want, this can be checked by hovering the cursor over the element in developer tools so here is where we use box-sizing */
+    box-sizing: border-box;
+    /* Now this makes the content size 160 */
+    /* Now this may or may not mess up the content within but atleast won't mess up the layout */
+    /* This basically adds the padding on the inside */
+}
+.box2{
+    background:blue;
+}
+.box3{
+    background:green;
+    padding:20px;
+}

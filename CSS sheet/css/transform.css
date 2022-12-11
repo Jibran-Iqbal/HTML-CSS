@@ -1,0 +1,84 @@
+/* 
+transform : translate(),scale(),rotate(),skew()
+*/
+
+div{
+    width:200px;
+    height:200px;
+    display:inline-block;
+}
+
+.one{
+    background:red;
+    transform:translateX(20px);
+    transform:translateX(-40px);
+    transform:translateX(50%);
+    /* This property moves the element on x-axis */
+    /* 50% means 50% of 200px */
+}
+.two{
+    background:blue;
+    transform:translateY(-30px);
+    /* And now my box moved up */
+}
+.three{
+    background:green;
+    /* transform: translateX(100px); */
+    /* and this proves that 50% is 50% of the 200px */
+    transform:translate(20px,30px);
+    /* The first one is x-axis value and the second one is y-axis value */
+}
+.four{
+    background:red;
+    transform:scaleX(0.5)
+    /* This property makes the element grow in the mentioned direction */
+}
+.five{
+    background:blue;
+    transform:scaleY(2);
+}
+.six{
+    background:green;
+    transform:scale(0.75,0.5);
+    /* The first value is for x-axis and the second value is for the y-axis */
+}
+.seven{
+    background:red;
+    transform:rotate(25deg);
+    /* rotate and rotateZ mean exactly the same thing */
+}
+.eight{
+    background:blue;
+    transform:rotateZ(45deg);
+
+}
+.nine{
+    background:green;
+    transform:rotateX(45deg);
+    /* And this is gonna be hard to see */
+}
+.ten{
+    background:yellow;
+    transform:rotateY(45deg);
+    /* And this is also gonna be hard to see */
+}
+.eleven{
+    background:red;
+    transform:skewX(40deg);
+    /* The element is gone at 90deg */
+    /* We can also have the negative value which will skew it to the other direction */
+}
+.twelve{
+    background:blue;
+    transform:skewY(50deg);
+    /* The element is gone at 90deg */
+}
+.thirteen{
+    background:green;
+    transform:skew(30deg,60deg);
+    /* The element is gone here for some reason */
+}
+.fourteen{
+    background:yellow;
+    transform:skew(60deg,30deg);
+}

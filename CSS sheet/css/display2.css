@@ -1,0 +1,48 @@
+/* 
+Block:Top Bottom Margin Respected
+Inline:Top Bottom Margin Not Respected
+Mobile Navbar
+list-style-type:property
+descendant selectors
+*/
+div{
+    background: blue;
+    color:white;
+    padding:20px;
+    margin:20px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li{
+    list-style-type: square;
+    /* Notice that the bullets are in square shape */
+    list-style-type: lower-roman;
+    /* The above one makes them roman numbers like i ii iii iv and so on */
+    list-style: none;
+    /* This above property removes the bullets */
+    /* After this we use the universal selector and push it all the way left */
+
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+ul li a{
+    text-decoration: none;
+    /*can also be written as ul a since we don't have any other child "a"*/
+    letter-spacing: 2px;
+    text-transform:capitalize;
+    background:black;
+    color:#f15025;
+    padding:5px;
+    margin:10px;
+    /* Now here links are inline elements and browser won't support us adding padding for inline elements therefore they are overlapping
+    
+    Therefore I'm changing them to block elements*/
+    display:block;
+    /* And just to make it look better */
+    margin:0;
+}

@@ -1,0 +1,29 @@
+/* 
+:root root element of the document
+html element
+general styles
+css variables
+*/
+:root{
+    background:red;
+    font-size:100%;
+    /* nothing changes as this still means 16px */
+    font-size:150%;
+}
+h1{
+    font-size:3rem;
+}
+/* 1rem=16px that's what our browser gives us */
+/* :root{
+    font-size:16px;
+} */
+.absolute{
+    font-size:24px;
+}
+
+.responsive{
+    font-size:1.5rem
+}
+/* Now the problem here is that the font-size in rem depends on the user's settings but we can change it to our requirements like how I did on line 15 */
+/* Notice that absolute stays same whilst the resoponsive changes */
+/* The upside to this is that we can change the font-size of our whole document whenever we want */

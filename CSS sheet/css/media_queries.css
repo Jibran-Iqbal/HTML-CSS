@@ -1,0 +1,62 @@
+/* 
+Media Queries
+Responsive Design
+Style Elements On Different Screen Sizes
+min-width: --- starting from
+max-width: --- up to 
+Mobile First
+*/
+body{
+    background-color: yellow;
+}
+.banner{
+    background: blue;
+}
+h1{
+    color:white;
+    text-decoration:underline;
+    text-align:center;
+    text-transform:capitalize;
+    font-style: oblique;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+    /* That above notation means starting from that screen size */
+    /* This can be tested out by pressing
+    ctrl+shift+M */
+    body{
+        background:red;
+    }
+    .banner{
+        background:yellow;
+    }
+    /* Notice that the underline is still there 
+    Which means here we are just overwriting stuff*/
+    /* We can add as many media queries as we would like */
+    h1{
+        color:black;
+        font-size:60px;
+    }
+}
+/* The thing to note for max width is how it is overwritten */
+@media screen and (max-width: 576px) {
+    /* That above notation means upto that screen size */
+    /* This can be tested out by pressing
+    ctrl+shift+M */
+    body{
+        background:blue;
+    }
+    .banner{
+        background:black;
+    }
+    /* Notice that the underline is still there 
+    Which means here we are just overwriting stuff*/
+    /* We can add as many media queries as we would like */
+    h1{
+        color:red;
+        text-decoration: none;
+        text-align: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        font-size:60px;
+    }
+}

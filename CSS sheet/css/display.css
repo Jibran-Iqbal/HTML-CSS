@@ -1,0 +1,38 @@
+/* 
+Default Display Property
+Block : Always starts a new line and takes full width 
+Inline : Does not start and only take up as much as content space
+*/
+.block{
+    background: blue;
+    color: white;
+}
+.inline{
+    background:red;
+    color:white;
+    
+}
+/* 
+Now I'll change the display properties of block elements from block to inline and inline elements from inline to block
+*/
+.blockk{
+    display: inline;
+}
+.inlined{
+    display: block;
+}
+/* 
+horizontal centering
+*/
+.blockkk{
+    text-align: center;
+    width: 150px;
+    margin:10px auto;
+    /* That can also be written as
+    margin-left: auto;
+    margin-right: auto;
+     */
+}
+.inlinedd{
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+/* 
+pseudo elements ::before ::after CONTENT not element
+content:''---required
+img --- does not work
+*/
+p::before{
+    content:"hello";
+    display:block;
+    background:black;
+    font-weight:bold;
+    font-size:2rem;
+    color:red;
+}
+/* Here we are able to add content before and after the element without bothering to open out html document */
+p::after{
+    content:"";
+    display:block;
+    background:green;
+    width:50px;
+    height:50px;
+}
+/* point to remember if the 
+content:"";
+isn't typed then nothing will be displayed */
+div{
+    width:50vw;
+    margin:100px auto;
+    border:2px solid red;
+}
+img{
+    width:100%;
+    /* here the size of the image is relative to the size of our div */
+    /* Now there is a small space between the border and the image at the bottom side*/
+    height:100%;
+    /* However height 100% is also not helping us with that space */
+    /* Now to fix this we use this */
+    display:block;
+}
+/* before and after won't work with img */
+.one{
+    border:none;
+    width:60vw;
+    position:relative;
+}
+/* Now we can't use before and after for the image but we can use it for out div which here I've classified as "one" */
+.one::before{
+    content:"";
+    border:2px solid grey;
+    width: 100%;
+    height: 100%;
+    /* Here we notice that nothing happens */
+    position:absolute;
+    /* for this we write position relative in div(.one) which is supposedly the parent here */
+    /* Now that that's done we notice some space on the right side before border and the bottom side */
+    box-sizing: border-box;
+    /* And now that's fixed too */
+    top:-40px;
+    left:-40px;
+    z-index: -2;
+    transition:all 0.5s linear;
+}
+.one::after{
+    content:"";
+    background: grey;
+    width: 100%;
+    height: 100%;
+    /* Here we notice that nothing happens */
+    position:absolute;
+    /* for this we write position relative in div(.one) which is supposedly the parent here */
+    /* Now that that's done we notice some space on the right side before border and the bottom side */
+    box-sizing: border-box;
+    /* And now that's fixed too */
+    top:-20px;
+    left:-20px;
+    z-index: -1;
+    transition:all 0.5s linear;
+}
+.one:hover::after,
+.one:hover::before{
+    top:0;
+    left:0;
+}
